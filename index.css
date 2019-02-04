@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+a:hover {
+    background: black;
+    color: white;
+}

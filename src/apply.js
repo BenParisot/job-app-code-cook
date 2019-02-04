@@ -6,29 +6,26 @@ const allergicNumberNode = document.getElementById('allergic-number');
 const yesNode = document.getElementById('yes');
 const noNode = document.getElementById('no');
 
-let allergyAnswer = '';
-
 peanutRangeNode.addEventListener('change', function() {
     allergicNumberNode.textContent = peanutRangeNode.value;
 });
 
 yesNode.addEventListener('change', function() {
-    console.log(yesNode.checked);
     if(yesNode.checked) {
-        peanutRangeNode.value = 1;
-        allergyAnswer = yesNode.checked;
         allergicNumberNode.textContent = '1';
+        peanutRangeNode.min = 1;
+        peanutRangeNode.value = 1;
+        peanutRangeNode.disabled = false;
     }
 });
 
 noNode.addEventListener('change', function() {
-    console.log(noNode.checked);
-    allergyAnswer = noNode.checked;
 
     if(noNode.checked) {
+        allergicNumberNode.textContent = 0;
+        peanutRangeNode.min = 0;
         peanutRangeNode.value = 0;
-        allergicNumberNode.textContent = '0';
-        allergicNumberNode.textContent = peanutRangeNode.value;
+        peanutRangeNode.disabled = true;
     }
 });
 
@@ -38,7 +35,6 @@ formNode.addEventListener('submit', function(event) {
     const applicant = {
         name: nameNode.value,
         zipCode: zipCodeNode.value,
-        allergy: allergyAnswer,
         allergyNumber: peanutRangeNode.value
     };
     

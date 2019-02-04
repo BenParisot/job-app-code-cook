@@ -41,6 +41,40 @@
                     >
                 </p>
             </section>
+            <section id="allergy">
+                <h2>Section 2</h2>
+                <p>Allergic to peanuts?</p>
+                <p>   
+                    <label for="yes">Yes</label>
+                        <input
+                            type="radio"
+                            name="allergic"
+                            id="yes"
+                            value="Yes"
+                        >
+                     <label for="no">No</label>
+                        <input
+                            type="radio"
+                            name="allergic"
+                            id="no"
+                            value="no"
+                        >
+                </p>
+                <p>If yes, on what scale?</p>
+                <section id="allergy-range">
+                    <p>
+                        <label for="peanuts"></label>
+                            <input
+                                type="range"
+                                value="0"
+                                id="peanuts"
+                                min="0"
+                                max="10"
+                            >
+                        <span id="allergic-number">0</span>
+                    </p>
+                </section>
+            </section>
             <button>Submit Application</button>
         </form>
     </main>

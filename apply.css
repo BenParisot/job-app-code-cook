@@ -12,3 +12,8 @@ main {
     border: 1px solid coral;
     padding: 10px;
 }
+
+#allergy {
+    border: 1px solid mediumaquamarine;
+    padding: 10px;
+}

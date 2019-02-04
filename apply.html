@@ -13,13 +13,14 @@
     </header>
 
     <main>
-        <form>
-            <section id="form-example">
+        <form id="form-example">
+            <section>
                 <h2>About You</h2>
                 <p>
                     <label for="name">Your name:</label>
                     <input 
-                        type="text" 
+                        type="text"
+                        name="name" 
                         id="name" 
                         autocomplete="off"
                         minlength="1"
@@ -32,5 +33,6 @@
             <button>Submit Application</button>
         </form>
     </main>
+    <script type="module" src="../src/apply.js"></script>
 </body>
 </html>

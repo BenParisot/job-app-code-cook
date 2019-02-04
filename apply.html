@@ -14,7 +14,7 @@
 
     <main>
         <form id="form-example">
-            <section>
+            <section id="about-section">
                 <h2>About You</h2>
                 <p>
                     <label for="name">Your name:</label>
@@ -25,7 +25,18 @@
                         autocomplete="off"
                         minlength="1"
                         maxlength="10"
-                        value="e.g., Jane Doe"
+                        required
+                    >
+                </p>
+                <p>
+                    <label for="zip-code">Zip Code</label>
+                    <input
+                        type="text"
+                        name="zip-code"
+                        id="zip-code"
+                        autocomplete="off"
+                        minlength="5"
+                        maxlength="5"
                         required
                     >
                 </p>
